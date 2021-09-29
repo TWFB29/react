@@ -1,15 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import About from './components/About';
 import Nav from './components/Nav';
+import Gallery from './components/Gallery'
 
 function App() {
   return (
-    <section className="my-5">
-      <h1 id="about">Who am I?</h1>
-      <h1 id="nav">Taylor</h1>
-    </section>
+    <div>
+      <Nav></Nav>
+      <main>
+        <Gallery></Gallery>
+        <About></About>
+      </main>
+    </div>
 
   );
 }
