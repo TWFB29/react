@@ -8,7 +8,11 @@ afterEach(cleanup);
 describe('Nav component', () => {
 // baseline test
 it('renders', () => {
-    render(<Nav />);
+    render(<Nav 
+        categories={categories}
+        setCurrentCategory={mockSetCurrentCategory}
+        currentCategory={mockCurrentCategory}
+    />);
   });
 
   // snapshot test
